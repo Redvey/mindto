@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:mindto/design/app_theme.dart';
 import 'package:mindto/features/onboarding/ui/onboarding_screen.dart';
+// import 'package:mindto/features/onboarding/ui/onboarding_screen.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: AppTheme.darkTheme,
-      home: OnboardingScreen(),
+      home: const OnboardingScreen(),
     );
   }
 }
