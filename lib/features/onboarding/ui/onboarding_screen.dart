@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:mindto/design/app_colors.dart';
 import 'package:mindto/features/onboarding/ui/widgets/page_views.dart';
 import 'package:onboarding/onboarding.dart';
@@ -41,7 +42,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           color: signinButtonColor,
           child: InkWell(
             borderRadius: signinButtonBorderRadius,
-            onTap: () {},
+            onTap: () {
+              context.go('/auth');
+            },
             child: const Padding(
               padding: signinButtonPadding,
               child: Text(

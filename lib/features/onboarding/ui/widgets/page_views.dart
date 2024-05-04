@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mindto/design/app_colors.dart';
 
-
 final onboardingPagesList = [
   DecoratedBox(
     decoration: BoxDecoration(
@@ -179,7 +178,6 @@ final onboardingPagesList = [
       children: [
         Container(
           height: 350,
-          padding: const EdgeInsets.symmetric(horizontal: 40.0),
           child: Image.asset(
             'assets/images/pic_4.png',
           ),
@@ -212,4 +210,3 @@ final onboardingPagesList = [
     ),
   ),
 ];
-
